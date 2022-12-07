@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+:root{
+    --text: #111;
+    --base: #f4f4f4;
+    --link: #2a3644;
+    --button: #f26964;
+    --bottom: #ab4b47;
+}
+
+* {
+  margin:0;
+  padding:0;
+  border:none;
+  list-style:none;
+  box-sizing: border-box;
+}
+
+body {
+  font:15px/1.25 'Alef';
+  color:var(--text);
+}
+
+form {
+  margin:70px auto;
+  background-color:var(--link);
+  width:400px;
+  text-align:center;
+  padding:40px;
+  border-radius: 6px;
+}
+
+form > h1 ,#newUser >h1 {
+  color:var(--base);
+  text-shadow:1px 1px 0px rgba(0, 0, 0, 0.7);
+  font-weight:400;
+  margin-bottom:20px;
+}
+
+input,select {
+  background:rgba(0, 0, 0, 0.2);
+  color:#fff;
+  text-shadow:1px 1px 0px rgba(0, 0, 0,0.3);
+  display:block;
+  width:269px;
+  padding:15px;
+  margin-bottom:10px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 6px;
+  transition: all 1s ease-in-out;
+  outline:none;
+}
+
+input:focus {
+  background:rgba(0, 0, 0, 0.1);
+  transition: all 1s ease-in-out;
+}
+
+input::placeholder {
+   color: rgba(225, 225, 225, 0.4);
+}
+
+
+button {
+  position:relative;
+  display:block;
+  margin-top:15px;
+  margin-bottom:15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding:17px;
+  width:270px;
+  border-radius: 6px;
+  transition: all 1s ease-in-out;
+  font-size:1.2em;
+  background-color:var(--button);
+  color:var(--base);
+  box-shadow:0px 3px 0px var(--bottom);
+  cursor:pointer;
+}
+
+button:active {
+  top:3px;
+  box-shadow:none;
+}
+
+#newUser{
+    display: none;
+}
