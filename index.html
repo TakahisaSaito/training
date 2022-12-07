@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Progress management</title>
+    <link rel="stylesheet" href="top.css">
+    <script type="text/javascript" src="Progress_management.js"></script>
+    <script type="text/javascript" src="submit.js"></script>
+</head>
+<body>
+
+    <form name="myForm" >
+        <h1>進捗管理プログラム</h1>
+        <input type="text"  name="name" placeholder="Username"/>
+        <button id="rogin">ログイン</button>
+        <button id="user_register" type="button">新規</button>
+
+        <div id="newUser">
+            <h1>新規登録</h1>
+            <input type="text" placeholder="Username"/>
+            <select name="position" >
+                <option value="">選択してください</option>
+                <option value=0>チェック者</option>
+                <option value=1>作業者</option>
+            </select>
+            <button type="button">登録</button>
+        </div>
+
+    </form>
+    
+</body>
+
+</html>
